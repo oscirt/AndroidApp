@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.dashboard;
+package com.example.myapplication.ui.investments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentDashboardBinding;
 
 public class DashboardFragment extends Fragment {
