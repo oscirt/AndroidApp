@@ -4,8 +4,5 @@
     <string name="investments">Инвестиции</string>
     <string name="profile">Профиль</string>
     <string name="write_post">Написать пост</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news">Что у вас нового?</string>
 </resources>

@@ -3,7 +3,7 @@
     xmlns:investments="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/post_write"
-        android:icon="@drawable/ic_baseline_post_add_24"
+        android:icon="@drawable/ic_baseline_check_circle_24"
         android:title="@string/write_post"
         investments:showAsAction="ifRoom"
         />

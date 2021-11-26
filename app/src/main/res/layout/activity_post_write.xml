@@ -4,12 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".ui.postWrite.PostWriteActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextTextMultiLine2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:gravity="start|top"
+        android:hint="@string/news"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="319dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

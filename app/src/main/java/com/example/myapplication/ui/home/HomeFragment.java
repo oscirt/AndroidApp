@@ -32,12 +32,11 @@ public class HomeFragment extends Fragment {
 
         final ListView listView = binding.listView;
         final String[] catNames = new String[] {
-                "Рыжик", "Барсик", "Мурзик", "Мурка", "Васька",
+                "Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. Nunc tincidunt ante vitae massa. Duis ante orci, molestie vitae, vehicula venenatis, tincidunt ac, pede. Nulla accumsan, elit sit", "Барсик", "Мурзик", "Мурка", "Васька",
                 "Томасина", "Кристина", "Пушок", "Дымка", "Кузя",
                 "Китти", "Масяня", "Симба"
         };
-        final ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(),
-                android.R.layout.simple_list_item_activated_1, catNames);
+        final HomeArrayAdapter adapter = new HomeArrayAdapter(getActivity(), catNames);
 
         listView.setAdapter(adapter);
         /*final TextView textView = binding.textHome;
