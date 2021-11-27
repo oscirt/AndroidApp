@@ -32,11 +32,17 @@ public class HomeFragment extends Fragment {
 
         final ListView listView = binding.listView;
         final String[] catNames = new String[] {
-                "Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. Nunc tincidunt ante vitae massa. Duis ante orci, molestie vitae, vehicula venenatis, tincidunt ac, pede. Nulla accumsan, elit sit", "Барсик", "Мурзик", "Мурка", "Васька",
-                "Томасина", "Кристина", "Пушок", "Дымка", "Кузя",
-                "Китти", "Масяня", "Симба"
+                "Барсик", "Мурзик", "Мурка", "Васька"
         };
-        final HomeArrayAdapter adapter = new HomeArrayAdapter(getActivity(), catNames);
+        final String[] times = new String[] {
+                "20:43", "19:25", "15:01", "09:18"
+        };
+        final String[] texts = new String[] {
+                getString(R.string.a), getString(R.string.b),
+                getString(R.string.c), getString(R.string.d)
+        };
+
+        final HomeArrayAdapter adapter = new HomeArrayAdapter(getActivity(), catNames, times, texts);
 
         listView.setAdapter(adapter);
 

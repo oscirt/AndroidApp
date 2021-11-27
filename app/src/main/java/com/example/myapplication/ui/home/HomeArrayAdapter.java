@@ -13,11 +13,16 @@ import com.example.myapplication.R;
 public class HomeArrayAdapter extends ArrayAdapter<String> {
     private final Context context;
     private final String[] values;
+    private final String[] times;
+    private final String[] texts;
 
-    public HomeArrayAdapter(Context context, String[] values) {
-        super(context, -1, values);
+    public HomeArrayAdapter(Context context, String[] names, String[] times,
+                            String[] texts) {
+        super(context, -1, names);
         this.context = context;
-        this.values = values;
+        this.values = names;
+        this.times = times;
+        this.texts = texts;
     }
 
     @Override
@@ -25,10 +30,16 @@ public class HomeArrayAdapter extends ArrayAdapter<String> {
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.row_layout, parent, false);
-        TextView textView = (TextView) rowView.findViewById(R.id.text_view);
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.image_view);
-        textView.setText(values[position]);
-        imageView.setImageResource(R.drawable.ic_baseline_android_24);
+        TextView pubName = rowView.findViewById(R.id.PubName);
+        TextView timePost = rowView.findViewById(R.id.timePost);
+        TextView postText = rowView.findViewById(R.id.postText);
+        ImageView pubIcon = rowView.findViewById(R.id.PubIcon);
+        ImageView postPicture = rowView.findViewById(R.id.postPicture);
+        pubName.setText(values[position]);
+        timePost.setText(times[position]);
+        postText.setText(texts[position]);
+        pubIcon.setImageResource(R.drawable.ic_baseline_android_24);
+        postPicture.setImageResource(R.drawable.pic);
 
         return rowView;
     }

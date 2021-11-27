@@ -25,8 +25,8 @@ public class NotificationsArrayAdapter extends ArrayAdapter<String> {
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.row_layout, parent, false);
-        TextView textView = (TextView) rowView.findViewById(R.id.text_view);
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.image_view);
+        TextView textView = (TextView) rowView.findViewById(R.id.PubName);
+        ImageView imageView = (ImageView) rowView.findViewById(R.id.PubIcon);
         textView.setText(values[position]);
         imageView.setImageResource(R.drawable.ic_baseline_android_24);
 
