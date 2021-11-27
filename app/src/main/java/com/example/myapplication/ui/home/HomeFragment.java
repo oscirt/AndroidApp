@@ -39,13 +39,7 @@ public class HomeFragment extends Fragment {
         final HomeArrayAdapter adapter = new HomeArrayAdapter(getActivity(), catNames);
 
         listView.setAdapter(adapter);
-        /*final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });*/
+
         return root;
     }
 

@@ -1,8 +1,10 @@
 package com.example.myapplication.ui.postWrite;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -25,5 +27,11 @@ public class PostWriteActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.write_post_menu, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public Intent getSupportParentActivityIntent() {
+        finish();
+        return super.getSupportParentActivityIntent();
     }
 }

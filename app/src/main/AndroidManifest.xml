@@ -12,12 +12,7 @@
         <activity
             android:name=".ui.postWrite.PostWriteActivity"
             android:exported="false"
-            android:label="@string/write_post"
-            android:parentActivityName="com.example.myapplication.MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.myapplication.MainActivity" />
-        </activity>
+            android:label="@string/write_post"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
